@@ -19,7 +19,7 @@
 ----------------------------------*/
 /* line 118, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker.ui-widget {
-  font-family: "Chivo", Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.1em;
 }
 /* line 123, ../sass/jqueryui-custom-widget-theme.scss */
@@ -28,7 +28,7 @@
 }
 /* line 130, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker.ui-widget input, .ui-datepicker.ui-widget select, .ui-datepicker.ui-widget textarea, .ui-datepicker.ui-widget button {
-  font-family: "Chivo", Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
 }
 /* line 136, ../sass/jqueryui-custom-widget-theme.scss */
