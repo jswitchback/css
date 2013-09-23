@@ -1,0 +1,259 @@
+/* Sass variable infused jquery UI css. Sole purpose: theme jquery datepicker with on color ($baseColor). Adjust Color Pallette section according to needs */
+
+
+
+/* All knowing base color */
+$baseColor: #0da8cf;
+
+/* COLOR PALLETE --- Theme Colors */
+$generalBackgroundColor: lighten($baseColor, 10%);
+$generalFontColor: lighten($baseColor, 60%);
+$widgetHeaderFontColor: lighten($baseColor, 60%);
+$interactionsFontColor: lighten($baseColor, 4%);
+$interaction--hover-focus--FontColor: lighten($baseColor, 6%);
+$interaction--hover-focus--borderColor: lighten($baseColor, 2%);
+
+$defaultBorderColor: lighten($baseColor, 40%);
+$defaultBackgorundColor: lighten($baseColor, 44%);
+
+$highlightBorderColor: lighten($baseColor, 2%);
+$highlightBackgroundColor: lighten($baseColor, 2%);
+
+$datepickerTableBorderColor: lighten($baseColor, 10%);
+$datepickerTableHeadBackgroundColor: lighten($baseColor, 14%);
+
+
+/* General variables */
+$widget--font-family: $base-font-family;
+
+
+/* Component Containers */
+$widget--font: $widget--font-family;
+$widget--font-size: 1.1em;
+$widget-widget--font-size: 1em;
+$widget--form-elements--font: $widget--font-family;
+$widget--form-elements--font-size: 1em;
+
+$widget-content--border-color: $baseColor;
+$widget-content--border-color: $baseColor;
+$widget-content--background-color: $generalBackgroundColor;
+$widget-content--font-color: $generalFontColor;
+$widget-content--link--font-color: $generalFontColor;
+
+$widget-header--border-color: $generalBackgroundColor;
+$widget-header--background-color: $generalBackgroundColor;
+$widget-header--font-color: $widgetHeaderFontColor;
+$widget-header-link-color: $generalFontColor;
+
+
+/* Interaction states
+----------------------------------*/
+$state-default--border-color: $defaultBorderColor;
+$state-default--background-color: $defaultBackgorundColor;
+$state-default--font-color: $interactionsFontColor;
+$state-default--link-color: $interactionsFontColor;
+
+$state-hover--border-color: $interaction--hover-focus--borderColor; 
+$state-hover--background-color: $defaultBorderColor; 
+$state-hover--font-color: $interaction--hover-focus--FontColor; 
+$state-hover--link-hover-visited--font-color: $interaction--hover-focus--FontColor;
+
+$state-focus--border-color: $interaction--hover-focus--borderColor; 
+$state-focus--background-color: $defaultBorderColor; 
+$state-focus--font-color: $interaction--hover-focus--FontColor; 
+
+$state-active--border-color: $generalBackgroundColor;
+$state-active--background-color: #ffffff;
+$state-active--font-color: $interaction--hover-focus--FontColor;
+$state-active--link-hover-visited--font-color: $interaction--hover-focus--FontColor;
+
+
+/* Interaction Cues
+----------------------------------*/
+$state-highlight--border-color: $highlightBorderColor;
+$state-highlight--background-color: $highlightBackgroundColor;
+$state-highlight--font-color: #fff;
+$state-highlight--link--font-color: #363636;
+
+$state-error--border-color: #cd0a0a;
+$state-error--background-color: #fef1ec;
+$state-error--font-color: #cd0a0a;
+$state-error--link--font-color: #cd0a0a;
+$state-error-text--font-color: #cd0a0a;
+
+
+
+/* Miscellaneous Styles */
+$widget-overlay--background-color: $baseColor;
+$widget-shadow--background-color: $baseColor;
+
+
+/* Datepicker */
+$datepicker-div--background: $generalBackgroundColor;
+$datepicker-div--font-family: $widget--font-family;
+$datepicker-div--border: 2px $datepickerTableBorderColor solid;
+$datepicker-div--shadow: 0 0 4px #fff;
+$datepicker-div--table-head--background: $datepickerTableHeadBackgroundColor;
+
+
+
+/* JQUERY UI OVVERRIDES */
+
+/* Component containers
+----------------------------------*/
+
+.ui-widget {
+  font-family: $widget--font;
+  font-size: $widget--font-size;
+}
+
+.ui-widget .ui-widget {
+  font-size: $widget-widget--font-size;
+}
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: $widget--form-elements--font;
+  font-size: $widget--form-elements--font-size;
+}
+
+
+.ui-widget-content {
+  border: 1px solid $widget-content--border-color;
+  background-color: $widget-content--background-color;
+  color: $widget-content--font-color;
+}
+
+.ui-widget-content a {
+  color: $widget-content--link--font-color;
+}
+
+.ui-widget-header {
+  border: 1px solid $widget-header--border-color;
+  background-color: $widget-header--background-color;
+  background-image: none;
+  color: $widget-header--font-color;
+}
+
+.ui-widget-header a {
+  color: $widget-header-link-color;
+}
+
+/* Interaction states
+----------------------------------*/
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 1px solid $state-default--border-color;
+  background-color: $state-default--background-color;
+  background-image: none;
+  color: $state-default--font-color;
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+  color: $state-default--link-color;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover {
+  border: 1px solid $state-hover--border-color;
+  background-color: $state-hover--background-color;
+  background-image: none;
+  color: $state-hover--font-color;
+}
+
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  border: 1px solid $state-focus--border-color;
+  background-color: $state-focus--background-color;
+  background-image: none;
+  color: $state-focus--font-color;
+}
+
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+  color: $state-hover--link-hover-visited--font-color;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  border: 1px solid $state-active--border-color;
+  background-color: $state-active--background-color;
+  color: $state-active--font-color;
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+  color: $state-active--link-hover-visited--font-color;
+}
+
+/* Interaction Cues
+----------------------------------*/
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: 1px solid $state-highlight--border-color;
+  background-color: $state-highlight--background-color;
+  color: $state-highlight--font-color;
+}
+
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+  color: $state-highlight--link--font-color;
+}
+
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+  border: 1px solid $state-error--border-color;
+  background-color: $state-error--background-color;
+  color: $state-error--font-color;
+}
+
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+  color: $state-error--link--font-color;
+}
+
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+  color: $state-error-text--font-color;
+}
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+  background-color: $widget-overlay--background-color;
+}
+.ui-widget-shadow {
+  background-color: $widget-shadow--background-color;
+}
+
+/* Datepicker  -- Custom Selectors from theme
+---------------------------------- */
+
+#ui-datepicker-div {
+  background: $datepicker-div--background;
+  border: $datepicker-div--border;
+  @include box-shadow($datepicker-div--shadow);
+  thead th {
+    font-size: .9em;
+  }
+}
