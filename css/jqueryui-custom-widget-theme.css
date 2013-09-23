@@ -19,7 +19,7 @@
 ----------------------------------*/
 /* line 118, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker.ui-widget {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Chivo", Arial, Helvetica, sans-serif;
   font-size: 1.1em;
 }
 /* line 123, ../sass/jqueryui-custom-widget-theme.scss */
@@ -28,7 +28,7 @@
 }
 /* line 130, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker.ui-widget input, .ui-datepicker.ui-widget select, .ui-datepicker.ui-widget textarea, .ui-datepicker.ui-widget button {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Chivo", Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
 /* line 136, ../sass/jqueryui-custom-widget-theme.scss */
@@ -97,7 +97,7 @@
 .ui-datepicker .ui-widget-header .ui-state-active {
   border: 1px solid #0da8cf;
   background-color: #58d5f4;
-  color: #0fbfec;
+  color: #0da8cf;
 }
 /* line 212, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-active a,
@@ -111,7 +111,7 @@
 /* line 223, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-highlight, .ui-datepicker.ui-widget-content .ui-state-highlight,
 .ui-datepicker .ui-widget-header .ui-state-highlight {
-  border: 1px solid #58d5f4;
+  border: 1px solid #61d7f5;
   background-color: #45d0f3;
   color: white;
 }

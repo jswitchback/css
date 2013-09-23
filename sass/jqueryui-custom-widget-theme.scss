@@ -22,11 +22,11 @@ $interaction--hover-focus--FontColor: lighten($baseColor, 6%);
 $interaction--hover-focus--borderColor: lighten($baseColor, 2%);
 
 $interaction--active--BackgroundColor: lighten($baseColor, 22%);
+$interaction--active--FontColor: $baseColor;
 
-
-$interaction--highlight--BorderColor: lighten($baseColor, 22%);
+$interaction--highlight--BorderColor: lighten($baseColor, 24%);
 $interaction--highlight--BackgroundColor: lighten($baseColor,18%);
-$interaction--highlight--FontColor: #ffffff;
+$interaction--highlight--FontColor: lighten($baseColor,60%);
 $interaction--highlight--LinkFontColor: #363636;
 
 
@@ -37,7 +37,7 @@ $datepickerTableHeadBackgroundColor: lighten($baseColor, 14%);
 /* ******************************** This section contains one-time use variables **************** */
 
 /* General variables */
-$widget--font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$widget--font-family: $base-font-family;
 
 
 /* Component Containers */
@@ -78,7 +78,7 @@ $state-focus--font-color: $interaction--hover-focus--FontColor;
 
 $state-active--border-color: $generalBackgroundColor;
 $state-active--background-color: $interaction--active--BackgroundColor;
-$state-active--font-color: $interaction--hover-focus--FontColor;
+$state-active--font-color: $interaction--active--FontColor;
 $state-active--link-hover-visited--font-color: $interaction--hover-focus--FontColor;
 
 
