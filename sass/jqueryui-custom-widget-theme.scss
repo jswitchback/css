@@ -1,13 +1,14 @@
-/* Sass variable infused jquery UI css. Sole purpose: theme jquery datepicker with on color ($baseColor). Adjust Color Pallette section according to needs */
+/* Sass variable infused jquery UI css. Sole purpose: theme jquery datepicker with one color ($baseColor). */
 
-/* Target a widget type. Add class name found on wrapping div. For example, Datepicker classes = ui-datepicker ui-widget ui.widget-content... So the widget specific class would be ui-datepicker.  */ 
+
+/* Target a widget type. Add class name found on wrapping div. For example, Datepicker classes are "ui-datepicker ui-widget ui.widget-content..."" So the widget specific class would be ui-datepicker.  */ 
 $widgetClass: ui-datepicker;
 
 /* All knowing base color */
 $baseColor: #0da8cf;
 
 
-/* ******************************** This section defines color relationships between the jQuery UI "interaction states" **************** */
+/* ******************************** This section defines color relationships between the jQuery UI "interaction states". Like colors are grouped together. **************** */
 
 
 $content--borderColor: $baseColor;
@@ -29,6 +30,16 @@ $hover--backgroundColor: $default--borderColor;
 $focus--backgroundColor: $default--borderColor; 
 
 
+$hover--fontColor: lighten($baseColor, 6%);
+$hover--link-hover-visited--fontColor: $hover--fontColor;
+$active--link-hover-visited--fontColor:  $hover--fontColor;
+$focus--fontColor: $hover--fontColor;
+
+
+$hover--borderColor: lighten($baseColor, 2%);
+$focus--borderColor: $hover--borderColor;
+
+
 $default--fontColor: lighten($baseColor, 4%);
 $active--backgroundColor: $default--fontColor;
 
@@ -38,10 +49,6 @@ $highlight--backgroundColor: $active--borderColor;
 
 
 $default--backgroundColor: lighten($baseColor, 44%);
-
-$hover-focus--fontColor: lighten($baseColor, 6%);
-
-$hover-focus--borderColor: lighten($baseColor, 2%);
 
 $highlight--borderColor: lighten($baseColor, 24%);
 
@@ -82,19 +89,19 @@ $state-default--background-color: $default--backgroundColor;
 $state-default--font-color: $default--fontColor;
 $state-default--link-color: $default--fontColor;
 
-$state-hover--border-color: $hover-focus--borderColor; 
+$state-hover--border-color: $hover--borderColor; 
 $state-hover--background-color: $hover--backgroundColor; 
-$state-hover--font-color: $hover-focus--fontColor; 
-$state-hover--link-hover-visited--font-color: $hover-focus--fontColor;
+$state-hover--font-color: $hover--fontColor; 
+$state-hover--link-hover-visited--font-color: $hover--link-hover-visited--fontColor;
 
-$state-focus--border-color: $hover-focus--borderColor; 
+$state-focus--border-color: $focus--borderColor; 
 $state-focus--background-color: $focus--backgroundColor; 
-$state-focus--font-color: $hover-focus--fontColor; 
+$state-focus--font-color: $focus--fontColor; 
 
 $state-active--border-color: $active--borderColor;
 $state-active--background-color: $active--backgroundColor;
 $state-active--font-color: $active--fontColor;
-$state-active--link-hover-visited--font-color: $hover-focus--fontColor;
+$state-active--link-hover-visited--font-color: $active--link-hover-visited--fontColor;
 
 
 /* Interaction Cues */
