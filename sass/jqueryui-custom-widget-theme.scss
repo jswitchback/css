@@ -1,5 +1,3 @@
-@import "my-sass-resources/base";
-
 /* Sass variable infused jquery UI css. Sole purpose: theme jquery datepicker with on color ($baseColor). Adjust Color Pallette section according to needs */
 
 /* Target a widget type. Add class name found on wrapping div. For example, Datepicker classes = ui-datepicker ui-widget ui.widget-content... So the widget specific class would be ui-datepicker.  */ 
@@ -56,7 +54,7 @@ $datepickerTableHeadBackgroundColor: lighten($baseColor, 14%);
 
 /* ******************************** General Variables **************** */
 
-$widget--font-family: $base-font-family;
+$widget--font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 /* Component Containers */
 $widget--font: $widget--font-family;
@@ -291,7 +289,9 @@ $datepicker-div--table-head--background: $datepickerTableHeadBackgroundColor;
 #ui-datepicker-div {
   background: $datepicker-div--background;
   border: $datepicker-div--border;
-  @include box-shadow($datepicker-div--shadow);
+  -webkit-box-shadow: $datepicker-div--shadow;
+  -moz-box-shadow: $datepicker-div--shadow;
+  box-shadow: $datepicker-div--shadow;
 }
 
 .ui-datepicker .ui-datepicker-header {
@@ -462,7 +462,9 @@ $datepicker-div--table-head--background: $datepickerTableHeadBackgroundColor;
 // #ui-datepicker-div {
 //   background: $datepicker-div--background;
 //   border: $datepicker-div--border;
-//   @include box-shadow($datepicker-div--shadow);
+//	 -widget--fontebkit-box-shadow: $datepicker-div--shadow;
+//	 -moz-box-shadow: $datepicker-div--shadow;
+//	 box-shadow: $datepicker-div--shadow;
 //   thead th {
 //     font-size: .9em;
 //   }

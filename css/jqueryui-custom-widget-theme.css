@@ -1,7 +1,3 @@
-/*
-  Mixins are slightly modified from Benjamin Doherty's first implementations: http://gist.github.com/377912
-  rgba-background mixin can now be passed an option $dir variable
-*/
 /* Sass variable infused jquery UI css. Sole purpose: theme jquery datepicker with on color ($baseColor). Adjust Color Pallette section according to needs */
 /* Target a widget type. Add class name found on wrapping div. For example, Datepicker classes = ui-datepicker ui-widget ui.widget-content... So the widget specific class would be ui-datepicker.  */
 /* All knowing base color */
@@ -16,45 +12,45 @@
 /* JQUERY UI OVERRIDES */
 /* Component containers
 ----------------------------------*/
-/* line 136, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 134, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker.ui-widget {
-  font-family: "Chivo", Arial, Helvetica, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.1em;
 }
-/* line 141, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 139, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker.ui-widget .ui-widget {
   font-size: 1em;
 }
-/* line 148, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 146, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker.ui-widget input, .ui-datepicker.ui-widget select, .ui-datepicker.ui-widget textarea, .ui-datepicker.ui-widget button {
-  font-family: "Chivo", Arial, Helvetica, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
 }
-/* line 154, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 152, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker.ui-widget-content {
   border: 1px solid #0da8cf;
   background-color: #0da8cf;
   color: white;
 }
-/* line 160, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 158, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker.ui-widget-content a {
   color: white;
 }
-/* line 164, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 162, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-widget-header {
   border: 1px solid #0da8cf;
   background-color: #0da8cf;
   background-image: none;
   color: white;
 }
-/* line 171, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 169, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-widget-header a {
   color: white;
 }
 
 /* Interaction states
 ----------------------------------*/
-/* line 182, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 180, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-default, .ui-datepicker.ui-widget-content .ui-state-default,
 .ui-datepicker .ui-widget-header .ui-state-default {
   border: 1px solid #aeebfa;
@@ -62,13 +58,13 @@
   background-image: none;
   color: #0eb8e2;
 }
-/* line 191, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 189, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-default a,
 .ui-datepicker .ui-state-default a:link,
 .ui-datepicker .ui-state-default a:visited {
   color: #0eb8e2;
 }
-/* line 197, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 195, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-hover, .ui-datepicker.ui-widget-content .ui-state-hover,
 .ui-datepicker .ui-widget-header .ui-state-hover {
   border: 1px solid #0eb0d9;
@@ -76,7 +72,7 @@
   background-image: none;
   color: #0fbfec;
 }
-/* line 206, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 204, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-focus, .ui-datepicker.ui-widget-content .ui-state-focus,
 .ui-datepicker .ui-widget-header .ui-state-focus {
   border: 1px solid #0eb0d9;
@@ -84,21 +80,21 @@
   background-image: none;
   color: #0fbfec;
 }
-/* line 216, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 214, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-hover a,
 .ui-datepicker .ui-state-hover a:hover,
 .ui-datepicker .ui-state-hover a:link,
 .ui-datepicker .ui-state-hover a:visited {
   color: #0fbfec;
 }
-/* line 222, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 220, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-active, .ui-datepicker.ui-widget-content .ui-state-active,
 .ui-datepicker .ui-widget-header .ui-state-active {
   border: 1px solid #61d7f5;
   background-color: #0eb8e2;
   color: white;
 }
-/* line 230, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 228, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-active a,
 .ui-datepicker .ui-state-active a:link,
 .ui-datepicker .ui-state-active a:visited {
@@ -107,31 +103,31 @@
 
 /* Interaction Cues
 ----------------------------------*/
-/* line 241, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 239, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-highlight, .ui-datepicker.ui-widget-content .ui-state-highlight,
 .ui-datepicker .ui-widget-header .ui-state-highlight {
   border: 1px solid #61d7f5;
   background-color: #61d7f5;
   color: white;
 }
-/* line 249, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 247, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-highlight a, .ui-datepicker.ui-widget-content .ui-state-highlight a,
 .ui-datepicker .ui-widget-header .ui-state-highlight a {
   color: #363636;
 }
-/* line 255, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 253, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-error, .ui-datepicker.ui-widget-content .ui-state-error,
 .ui-datepicker .ui-widget-header .ui-state-error {
   border: 1px solid #cd0a0a;
   background-color: #fef1ec;
   color: #cd0a0a;
 }
-/* line 263, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 261, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-error a, .ui-datepicker.ui-widget-content .ui-state-error a,
 .ui-datepicker .ui-widget-header .ui-state-error a {
   color: #cd0a0a;
 }
-/* line 269, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 267, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-state-error-text, .ui-datepicker.ui-widget-content .ui-state-error-text,
 .ui-datepicker .ui-widget-header .ui-state-error-text {
   color: #cd0a0a;
@@ -140,18 +136,18 @@
 /* Misc visuals
 ----------------------------------*/
 /* Overlays */
-/* line 279, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 277, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-widget-overlay {
   background-color: #0da8cf;
 }
-/* line 282, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 280, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker .ui-widget-shadow {
   background-color: #0da8cf;
 }
 
 /* Datepicker  -- Custom Selectors from theme
 ---------------------------------- */
-/* line 291, ../sass/jqueryui-custom-widget-theme.scss */
+/* line 289, ../sass/jqueryui-custom-widget-theme.scss */
 .ui-datepicker,
 #ui-datepicker-div {
   background: #0da8cf;
