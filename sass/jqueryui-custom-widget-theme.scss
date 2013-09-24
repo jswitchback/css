@@ -8,37 +8,55 @@ $widgetClass: ui-datepicker;
 /* All knowing base color */
 $baseColor: #0da8cf;
 
-/* COLOR PALLETE --- Theme Colors */
-$generalBackgroundColor: $baseColor;
-$generalFontColor: lighten($baseColor, 60%);
 
-$widget--HeaderFontColor: lighten($baseColor, 60%);
+/* ******************************** This section defines color relationships between the jQuery UI "interaction states" **************** */
 
-$interaction--default--FontColor: lighten($baseColor, 4%);
-$interaction--default--BorderColor: lighten($baseColor, 40%);
-$interaction--default--BackgroundColor: lighten($baseColor, 44%);
 
-$interaction--hover-focus--FontColor: lighten($baseColor, 6%);
-$interaction--hover-focus--borderColor: lighten($baseColor, 2%);
+$content--borderColor: $baseColor;
+$header--borderColor: $baseColor;
+$header--backgroundColor: $baseColor;
+$content--backgroundColor: $content--borderColor;
 
-$interaction--active--BackgroundColor: lighten($baseColor, 22%);
-$interaction--active--FontColor: $baseColor;
 
-$interaction--highlight--BorderColor: lighten($baseColor, 24%);
-$interaction--highlight--BackgroundColor: lighten($baseColor,18%);
-$interaction--highlight--FontColor: lighten($baseColor,60%);
-$interaction--highlight--LinkFontColor: #363636;
+$content--fontColor: lighten($baseColor, 60%);
+$content--link--fontColor: $content--fontColor;
+$header--fontColor: $content--fontColor;
+$header-linkColor: $content--fontColor;
+$active--fontColor: $content--fontColor;
+$highlight--fontColor: $active--fontColor;
 
+
+$default--borderColor: lighten($baseColor, 40%);
+$hover--backgroundColor: $default--borderColor; 
+$focus--backgroundColor: $default--borderColor; 
+
+
+$default--fontColor: lighten($baseColor, 4%);
+$active--backgroundColor: $default--fontColor;
+
+
+$active--borderColor: lighten($baseColor, 24%);
+$highlight--backgroundColor: $active--borderColor;
+
+
+$default--backgroundColor: lighten($baseColor, 44%);
+
+$hover-focus--fontColor: lighten($baseColor, 6%);
+
+$hover-focus--borderColor: lighten($baseColor, 2%);
+
+$highlight--borderColor: lighten($baseColor, 24%);
+
+$highlight--linkFontColor: #363636;
 
 $datepickerTableBorderColor: lighten($baseColor, 10%);
+
 $datepickerTableHeadBackgroundColor: lighten($baseColor, 14%);
 
 
-/* ******************************** This section contains one-time use variables **************** */
+/* ******************************** General Variables **************** */
 
-/* General variables */
 $widget--font-family: $base-font-family;
-
 
 /* Component Containers */
 $widget--font: $widget--font-family;
@@ -47,46 +65,45 @@ $widget-widget--font-size: 1em;
 $widget--form-elements--font: $widget--font-family;
 $widget--form-elements--font-size: 1em;
 
-/* ******************************** This section defines the relationships between colors **************** */
+/* ******************************** This section defines one-to-one variables in place of jQuery UI interaction states **************** */
 
-$widget-content--border-color: $baseColor;
-$widget-content--border-color: $baseColor;
-$widget-content--background-color: $generalBackgroundColor;
-$widget-content--font-color: $generalFontColor;
-$widget-content--link--font-color: $generalFontColor;
+$widget-content--border-color: $content--borderColor;
+$widget-content--background-color: $content--backgroundColor;
+$widget-content--font-color: $content--fontColor;
+$widget-content--link--font-color: $content--link--fontColor;
 
-$widget-header--border-color: $generalBackgroundColor;
-$widget-header--background-color: $generalBackgroundColor;
-$widget-header--font-color: $widget--HeaderFontColor;
-$widget-header-link-color: $generalFontColor;
+$widget-header--border-color: $header--borderColor;
+$widget-header--background-color: $header--backgroundColor;
+$widget-header--font-color: $header--fontColor;
+$widget-header-link-color: $header-linkColor;
 
 
 /* Interaction states */
-$state-default--border-color: $interaction--default--BorderColor;
-$state-default--background-color: $interaction--default--BackgroundColor;
-$state-default--font-color: $interaction--default--FontColor;
-$state-default--link-color: $interaction--default--FontColor;
+$state-default--border-color: $default--borderColor;
+$state-default--background-color: $default--backgroundColor;
+$state-default--font-color: $default--fontColor;
+$state-default--link-color: $default--fontColor;
 
-$state-hover--border-color: $interaction--hover-focus--borderColor; 
-$state-hover--background-color: $interaction--default--BorderColor; 
-$state-hover--font-color: $interaction--hover-focus--FontColor; 
-$state-hover--link-hover-visited--font-color: $interaction--hover-focus--FontColor;
+$state-hover--border-color: $hover-focus--borderColor; 
+$state-hover--background-color: $hover--backgroundColor; 
+$state-hover--font-color: $hover-focus--fontColor; 
+$state-hover--link-hover-visited--font-color: $hover-focus--fontColor;
 
-$state-focus--border-color: $interaction--hover-focus--borderColor; 
-$state-focus--background-color: $interaction--default--BorderColor; 
-$state-focus--font-color: $interaction--hover-focus--FontColor; 
+$state-focus--border-color: $hover-focus--borderColor; 
+$state-focus--background-color: $focus--backgroundColor; 
+$state-focus--font-color: $hover-focus--fontColor; 
 
-$state-active--border-color: $generalBackgroundColor;
-$state-active--background-color: $interaction--active--BackgroundColor;
-$state-active--font-color: $interaction--active--FontColor;
-$state-active--link-hover-visited--font-color: $interaction--hover-focus--FontColor;
+$state-active--border-color: $active--borderColor;
+$state-active--background-color: $active--backgroundColor;
+$state-active--font-color: $active--fontColor;
+$state-active--link-hover-visited--font-color: $hover-focus--fontColor;
 
 
 /* Interaction Cues */
-$state-highlight--border-color: $interaction--highlight--BorderColor;
-$state-highlight--background-color: $interaction--highlight--BackgroundColor;
-$state-highlight--font-color: $interaction--highlight--FontColor;
-$state-highlight--link--font-color: $interaction--highlight--LinkFontColor;
+$state-highlight--border-color: $highlight--borderColor;
+$state-highlight--background-color: $highlight--backgroundColor;
+$state-highlight--font-color: $highlight--fontColor;
+$state-highlight--link--font-color: $highlight--linkFontColor;
 
 $state-error--border-color: #cd0a0a;
 $state-error--background-color: #fef1ec;
@@ -102,11 +119,12 @@ $widget-shadow--background-color: $baseColor;
 
 
 /* Datepicker */
-$datepicker-div--background: $generalBackgroundColor;
+$datepicker-div--background: $baseColor;
 $datepicker-div--font-family: $widget--font-family;
 $datepicker-div--border: 2px $datepickerTableBorderColor solid;
 $datepicker-div--shadow: 0 0 4px #fff;
 $datepicker-div--table-head--background: $datepickerTableHeadBackgroundColor;
+
 
 
 /* JQUERY UI OVERRIDES */
@@ -274,6 +292,10 @@ $datepicker-div--table-head--background: $datepickerTableHeadBackgroundColor;
   background: $datepicker-div--background;
   border: $datepicker-div--border;
   @include box-shadow($datepicker-div--shadow);
+}
+
+.ui-datepicker .ui-datepicker-header {
+	padding: .4em 0;
 }
 
 
